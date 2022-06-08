@@ -17,8 +17,10 @@ div {
 
 input {
     padding: 3%;
-    border: 1px solid rgb(92, 92, 92);
+    border: 1px solid #5c5c5c;
     border-radius: 5px;
+    display: block;
+    margin: auto;
 }
 
 .flex {
@@ -43,9 +45,6 @@ input {
     display: flex;
     flex-direction: column;
     width: 20%;
-
-
-    text-align: center;
 }
 
 hr {
@@ -62,6 +61,7 @@ hr {
 .log {
     border: 1px solid rgba(128, 128, 128, 0.445);
     margin: auto;
+    width: 100%;
 }
 
 .log img {
@@ -70,7 +70,12 @@ hr {
     margin-bottom: 5%;
 }
 
+#user{
+    width: 77%;
+}
+
 #pass {
+    width: 70%;
     margin-top: 2%;
 }
 
@@ -107,4 +112,14 @@ hr {
 span {
     color: rgb(0, 149, 246);
     font-weight: 600;
+}
+
+@media (max-width: 1280px) {
+    .img{
+        display: none;
+    }
+
+    .login{
+        width: 60%;
+    }
 }
